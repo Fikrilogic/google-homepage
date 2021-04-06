@@ -2,12 +2,13 @@ body{
     margin: 0px;
     padding: 0px;
     width: 100%;
-    height: 50vh;
+    height: auto;
+    overflow: hidden;
 }
 
 header{
     width: 100%;
-    height: 50px;
+    height: 30px;
     padding: 10px;
 }
 .navbar-left{
@@ -64,9 +65,15 @@ header{
     margin-top: -10%;
 }
 
+.navbar-right ul li a:hover, .navbar-left ul li a:hover{
+    text-decoration: underline;
+    color: rgba(0,0,0,1);
+}
+
+/*container*/
 .container{
     width: 50%;
-    height: auto;
+    height: 300px;
     display: flex;
     flex-direction: column;
     margin-left: 25%;
@@ -107,4 +114,52 @@ button{
     background-color: #fff;
     font-size: 15px;
     color: rgba(0,0,0,0.5);
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 50px;
+}
+
+.bot-nav-left {
+    float: left;
+}
+.bot-nav-left ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.bot-nav-left ul li{
+    margin-right: 10px;
+    font-size: 14px;
+    padding: 5px;
+}
+.bot-nav-left ul li a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.5);
+}
+
+.bot-nav-right{
+    float: right;
+}
+
+.bot-nav-right ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+}
+.bot-nav-right ul li{
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 14px;
+}
+.bot-nav-right ul li a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.5);
+}
+.bot-nav-right ul li a:hover, .bot-nav-left ul li a:hover{
+    text-decoration: underline;
 }
